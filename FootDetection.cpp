@@ -203,6 +203,7 @@ int main()
 		if (lData.force)
 		{
 			leftGaitCnt++;
+			leftScalar = bottomPoint(left)[0];
 		}
 		else
 		{
@@ -211,17 +212,6 @@ int main()
 		if (rData.force)
 		{
 			rightGaitCnt++;
-		}
-		else
-		{
-			rightGaitCnt = 0;
-		}
-		if (leftGaitCnt == 1)
-		{
-			leftScalar = bottomPoint(left)[0];
-		}
-		if (rightGaitCnt == 1)
-		{
 			rightScalar = bottomPoint(right);
 		}
 		if (leftGaitCnt)
